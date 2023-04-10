@@ -10,3 +10,4 @@ Write a JavaScript program to get the width and height of the window (any time t
 
 
 
+
