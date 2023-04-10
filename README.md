@@ -5,3 +5,4 @@ Write a JavaScript program to get the width and height of the window (any time t
 # Instructions 
 - The size should be in an `<h1>` tag with the string as `Width: x and Height: y`.
 - This `<h1>` tag should be inside a div with id `sizeInfo`, any other id will result in the failure of tests
+- 
