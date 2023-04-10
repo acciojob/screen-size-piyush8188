@@ -34,7 +34,7 @@ jobs:
           ls ${{ github.workspace }}
       - name: Acciojob Assignment Action
         id: assignmentAction
-        uses: acciojob/assignment-action@v0.0.2
+        uses: acciojob/assignment-action@v1.1
         env:
           ACCIO_ASGMNT_ACTION_TOKEN: ${{ secrets.ACCIO_ASGMNT_ACTION_TOKEN }}
           ACCIOJOB_BACKEND_URL: ${{ vars.ACCIOJOB_BACKEND_URL }}
@@ -55,11 +55,7 @@ jobs:
         cache: maven
     - name: Junit Assignment Action
       id: assignmentAction
-      uses: acciojob/junit-github-action@v0.12
+      uses: acciojob/junit-github-action@v1.1
       env:
           ACCIO_ASGMNT_ACTION_TOKEN: ${{ secrets.ACCIO_ASGMNT_ACTION_TOKEN }}
           ACCIOJOB_BACKEND_URL: ${{ vars.ACCIOJOB_BACKEND_URL }}
-
-  
-
-
