@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Checking Question Type
         id: checkingQuestionType
-        uses: acciojob/checking-question-type-action@latest
+        uses: acciojob/checking-question-type-action@main
         env:
           ACCIO_ASGMNT_ACTION_TOKEN: ${{ secrets.ACCIO_ASGMNT_ACTION_TOKEN }}
           ACCIOJOB_BACKEND_URL: ${{ vars.ACCIOJOB_BACKEND_URL }}
