@@ -1,8 +1,13 @@
 name: Acciojob Tests
 
 on:
-  push:
+ push:
     branches: [ "main","master" ]
+ workflow_dispatch:
+    inputs:
+      environment:
+        type: string
+        required: true
 
 jobs:
   checking-question-type:
