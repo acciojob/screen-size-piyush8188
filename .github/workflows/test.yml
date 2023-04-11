@@ -6,7 +6,7 @@ on:
 
 jobs:
   checking-question-type:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - name: Checking Question Type
       id: checkingQuestionType
@@ -18,7 +18,7 @@ jobs:
       questionType: ${{ steps.checkingQuestionType.outputs.questionType }}
 
   running-accio-cypress-tests:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: checking-question-type 
     if: needs.checking-question-type.outputs.questionType == 'REACT' || needs.checking-question-type.outputs.questionType == 'Basic' 
     steps:
@@ -42,7 +42,7 @@ jobs:
 
   
   running-accio-junit-tests:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: checking-question-type 
     if: needs.checking-question-type.outputs.questionType == 'JAVA'
     steps:
