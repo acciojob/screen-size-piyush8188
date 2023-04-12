@@ -10,9 +10,7 @@ on:
         required: true
 
 jobs:
-  checking-question-type:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Running main workflow
-      uses: acciojob/acciojob-tests-action@main
+  calling-acciojob-main-action:
+    uses: acciojob/acciojob-tests-action/.github/workflows/main-action.yml@main
+    
       
