@@ -3,11 +3,6 @@ name: Acciojob Tests
 on:
  push:
     branches: [ "main","master" ]
- workflow_dispatch:
-    inputs:
-      environment:
-        type: string
-        required: true
 
 jobs:
   calling-acciojob-main-action:
